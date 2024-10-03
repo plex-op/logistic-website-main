@@ -1,0 +1,53 @@
+.product-card{
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c; /* Neutral-800 background */
+    border-radius: 24px; /* 3xl rounding */
+    color: #d1d5db; /* Neutral-300 text color */
+    padding: 1rem; /* p-4 padding */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.75rem; /* gap-3 */
+    transition: box-shadow 0.3s, background-color 0.3s; /* Smooth transition for hover */
+}
+
+.product-card:hover {
+    background-color: #111827; /* Hover state: gray-900 */
+    box-shadow: 0px 10px 15px -3px rgba(0, 255, 255, 0.7), 0px 4px 6px -2px rgba(0, 255, 255, 0.3); /* Hover shadow */
+  }
+
+  .card-image {
+    width: 100%; /* w-52 */
+    height: 10rem; /* h-40 */
+    background-color: #38bdf8; /* Sky-300 background */
+    border-radius: 16px; /* 2xl rounding */
+  }
+  
+  /* Card title */
+  .card-title {
+    font-weight: 800; /* font-extrabold */
+    margin: 0;
+  }
+  
+  /* Card description */
+  .card-description {
+    margin: 0;
+  }
+  
+  /* Button styles */
+  .card-button {
+    background-color: #0369a1; /* Sky-700 background */
+    font-weight: 800; /* font-extrabold */
+    padding: 0.5rem 1.5rem; /* p-2 px-6 */
+    border-radius: 12px; /* rounded-xl */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .card-button:hover {
+    background-color: #0ea5e9; /* Hover state: Sky-500 */
+  }

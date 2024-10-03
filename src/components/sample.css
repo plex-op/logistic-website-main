@@ -1,0 +1,48 @@
+.store-page-preview {
+    position: relative;
+   width: 100%;
+   height: 100vh;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+  
+  .image.active {
+    transform: translateX(0);
+  }
+  
+  .image:not(.active) {
+    transform: translateX(-100%);
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .controls button {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
